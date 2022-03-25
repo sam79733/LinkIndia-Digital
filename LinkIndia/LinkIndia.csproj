@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Services\Post\" />
+    <Folder Include="Services\Util\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\PostTruck\" />
+    <Folder Include="Resources\Transporter\" />
+    <Folder Include="Services\Registration\" />
+    <Folder Include="Resources\TruckOwner\" />
+    <Folder Include="Resources\LoadProvider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\" />
+    <None Remove="Resources\Images\" />
+    <None Remove="Resources\Transporter\" />
+    <None Remove="Services\Registration\" />
+    <None Remove="Resources\TruckOwner\" />
+    <None Remove="Resources\LoadProvider\" />
+  </ItemGroup>
+</Project>
